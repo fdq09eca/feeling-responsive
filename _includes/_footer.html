@@ -19,17 +19,18 @@
 
 
           <div class="small-6 medium-3 large-3 large-offset-1 columns">
-            {% for service_item in site.data.services %}
+            {% for item in site.data.affiliation %}
               {% if forloop.first == true %}
-                <h5 class="shadow-black">{{ service_item.menu_name }}</h5>
+                <h5 class="shadow-black">{{ item.menu_name }}</h5>
               {% endif %}
             {% endfor %}
 
               <ul class="no-bullet shadow-black">
-              {% for service_item in site.data.services %}
-                {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
-                  <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
-                    <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
+                {%assign sorted_affiliation = site.data.affiliation | sort: 'name'%}
+              {% for item in sorted_affiliation %}
+                {% if item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
+                  <li {% if item.class %}class="{{ item.class }}" {% endif %}>
+                    <a href="{{ domain }}{{ item.url }}" {% if item.url contains 'http' %}target="_blank" {% endif %} title="{{ item.title }}">{{ item.name }}</a>
                   </li>
               {% endfor %}
               </ul>
@@ -37,21 +38,23 @@
 
 
           <div class="small-6 medium-3 large-3 columns">
-            {% for network_item in site.data.network %}
+            {% for cu_web_policy in site.data.cuhk_web_policies %}
               {% if forloop.first == true %}
-                <h5 class="shadow-black">{{ network_item.menu_name }}</h5>
+              <!-- <img src="/assets/img/logo-footer.png" alt="" srcset=""> -->
+                <h5 class="shadow-black">{{ cu_web_policy.menu_name }}</h5>
               {% endif %}
             {% endfor %}
 
-            <ul class="no-bullet shadow-black">
-            {% for network_item in site.data.network %}
-              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
-                <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
-                  <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
+            <ul class="no-bullet shadow-black inline-list" style="padding-top: 10px;">
+            {% for cu_web_policy in site.data.cuhk_web_policies %}
+              {% if cu_web_policy.url contains 'http' %}{% assign domain = '' %}{% else %}{% capture domain %}{{ site.url }}{{ site.baseurl }}{% endcapture %}{% endif %}
+                <li {% if cu_web_policy.class %}class="{{ cu_web_policy.class }}" {% endif %}>
+                  <a href="{{ domain }}{{ cu_web_policy.url }}" {% if cu_web_policy.url contains 'http' %}target="_blank" {% endif %} title="{{ cu_web_policy.title }}">{{ cu_web_policy.name }}</a>
                 </li>
             {% endfor %}
             </ul>
-          </div><!-- /.large-3.columns -->
+          </div>
+          <!-- /.large-3.columns
         </div><!-- /.row -->
 
       </div><!-- /#footer -->
@@ -60,7 +63,7 @@
       <div id="subfooter">
         <nav class="row">
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            {{ site.credits }}
+            <p>Copyright © {{ "now" | date: "%Y" }}. Hong Kong Institute of Educational Research. All Rights Reserved. The Chinese University of Hong Kong</p>
           </section>
 
           <section id="subfooter-right" class="small-12 medium-6 columns">
