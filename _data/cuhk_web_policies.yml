@@ -1,4 +1,4 @@
-- menu_name: <img src="/assets/img/logo-footer.png" alt="footer-logo">
+- footer_logo: <img src="assets/img/logo-footer.png" alt="footer-logo">
 
 - name: "Disclamier"
   url: "https://www.hkier.cuhk.edu.hk/en/disclaimer.asp"
