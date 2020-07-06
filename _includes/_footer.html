@@ -41,7 +41,8 @@
             {% for cu_web_policy in site.data.cuhk_web_policies %}
               {% if forloop.first == true %}
               <!-- <img src="/assets/img/logo-footer.png" alt="" srcset=""> -->
-                <h5 class="shadow-black">{{ cu_web_policy.footer_logo }}</h5>
+              <!-- <h5 class="shadow-black">{{ cu_web_policy.footer_logo }}</h5> -->
+              <img src="{{site.url}}{{site.baseurl}}{{ cu_web_policy.footer_logo }}">
               {% endif %}
             {% endfor %}
 
