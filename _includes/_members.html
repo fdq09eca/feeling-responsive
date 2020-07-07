@@ -1,0 +1,35 @@
+<div class="row t30">
+  {% for member in site.data.members %}
+  {% assign name = member.name | split: ", " %}
+  <div class="columns medium-4">
+    
+    <img
+    src="{{ site.url }}{{ site.baseurl }}{{ member.avater }}"
+    alt="{{name.first}} {{name.last}}"
+    style="width: 100%;"
+  />
+  <!-- <img
+  src="https://www.w3schools.com/w3images/team1.jpg"
+  alt="{{name.first}} {{name.last}}"
+  style="width: 100%;"
+/> -->
+  
+      <div class="card">
+      <ul class="no-bullet">
+        <li class="member-title">{{member.title}} {{name.first}} {{name.last}}</li>
+        <li class="member-position">{{member.position}}</li>
+        <ul class="no-bullet">
+          <strong>Reseach interests</strong>
+          <li class="member-abstract">{{member.research_interests | markdownify }}</li>
+        </ul>
+      </ul>
+      <a class="button tiny" href="{{member.personal_website}}">Read more</a>
+      <a class="button tiny" href="mailto:{{member.email}}">Contact</a>
+      </div>
+      
+
+      
+    
+  </div>
+  {% endfor %}
+</div>

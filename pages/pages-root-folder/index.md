@@ -9,19 +9,22 @@ header:
   image_fullwidth: landing-banner.jpg
 widget1:
   title: "About us"
-  url: '/info/'
+  url: '/about/'
   image: widget-1-302x182.jpg
-  text: 'Lorem ex sint consequat Lorem amet incididunt exercitation anim mollit laborum voluptate deserunt et. Duis aute eu labore magna cupidatat dolor irure deserunt. Elit magna irure sunt cillum eiusmod aliquip irure. Culpa cillum non tempor aliqua reprehenderit cillum labore fugiat aliquip amet eiusmod mollit qui quis. Adipisicing elit eiusmod eiusmod mollit nostrud laborum.'
+  text: |
+    Our background information and people.
 widget2:
   title: "Our Research"
   url: 'http://phlow.github.io/feeling-responsive/info/'
-  text: 'Eiusmod laboris ad esse et adipisicing esse ea minim duis enim quis amet voluptate. Enim minim et occaecat Lorem ipsum fugiat ex do culpa cillum irure cupidatat ex. Qui tempor ea consequat laboris laboris fugiat. Incididunt do ad sunt tempor ea officia. Ut eu velit ipsum ea in aliqua deserunt duis dolor laborum.'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  image: research-thumbnail.jpg
+  text: |
+    Our Research themes, progress and results.
+  # video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
-  title: ""
+  title: "News"
   url: 'https://github.com/Phlow/feeling-responsive'
-  image: widget-github-303x182.jpg
-  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. Grab the <a href="https://github.com/Phlow/feeling-responsive/tree/bare-bones-version">Bare-Bones-Version</a> for a fresh start or learn how to use it with the <a href="https://github.com/Phlow/feeling-responsive/tree/gh-pages">education-version</a> with sample posts and images. Then tell me via Twitter <a href="http://twitter.com/phlow">@phlow</a>.'
+  image: latest-news-thumbnail.jpg
+  text: Our latest plan and activities.
 #
 # Use the call for action to show a button on the frontpage
 #

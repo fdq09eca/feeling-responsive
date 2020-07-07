@@ -17,6 +17,7 @@ image:
 categories:
     - design
     - typography
+# permalink: "/home/"
 ---
 <!--more-->
 

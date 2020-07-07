@@ -1,15 +1,16 @@
 ---
 layout: page-fullwidth
-title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Get in touch with us"
-teaser: ''
+meta_title: "Contact"
+header:
+    title: Contact
+    image_fullwidth: unsplash_brooklyn-bridge_header.jpg
 permalink: "/contact/"
 ---
 <div class="row t60">
     <div class="medium-6 columns b30">
+    <h1>Contact us</h1>    
     {%include _contact.html%}
-<h1>Leave us a message</h1>
+<h2>Leave us a message</h2>
 <form action="https://getform.io/f/465b6217-42b1-4af3-9b17-64e8738c955d" method="POST">
     <input type="text" id="name" name="name" placeholder="Your name" required>
     <input type="email" id="email" name="email" placeholder="your@email.com" required>
