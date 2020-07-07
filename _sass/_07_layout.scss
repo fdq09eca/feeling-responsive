@@ -297,20 +297,20 @@ body.video cite { color: #fff; }
     background: $subfooter-bg;
     color: $subfooter-color;
     padding-top: 30px;
+    a {
+        color: $subfooter-link-color;
+        border: 0;
+        // text-transform: uppercase;
+        &:hover {
+            color: #fff;
+        }
+    }
 }
 
 #subfooter-left ul.inline-list {
     float: left;
 }
 
-.credits a {
-    color: $subfooter-link-color;
-    border: 0;
-    text-transform: uppercase;
-    &:hover {
-        color: #fff;
-  }
-}
 
 .social-icons {
     margin-bottom: 10px !important;

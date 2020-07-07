@@ -63,13 +63,8 @@
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
             <p>Copyright © {{ "now" | date: "%Y" }}. Hong Kong Institute of Educational Research. All Rights Reserved. The Chinese University of Hong Kong</p>
           </section>
-
           <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            {% for social_item in site.data.socialmedia %}
-              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
-            {% endfor %}
-            </ul>
+            {% include _contact.html short=true %}
           </section>
         </nav>
       </div><!-- /#subfooter -->
