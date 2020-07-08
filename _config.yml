@@ -273,3 +273,12 @@ asciidoctor:
     icons: font
 
 theme: jekyll-theme-cayman
+
+collections:
+  lit-review:
+    order:
+      - 2020-07-08-migration-and-education.md
+      - 2020-07-08-migrant-students-youth-health-wellbeing.md
+      - 2020-07-08-schools-and-governments-support-policies-and-reforms.md
+    output: true
+    permalink: '/research/:name'

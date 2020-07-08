@@ -13,7 +13,7 @@
 
             <p class="shadow-black">
               {{ site.description }}
-              <a href="{{ site.url }}{{ site.baseurl }}/info/">{{ site.data.language.more }}</a>
+              <a href="{{ site.url }}{{ site.baseurl }}/about/">{{ site.data.language.more }}</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -61,7 +61,7 @@
       <div id="subfooter">
         <nav class="row">
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            <p>Copyright © {{ "now" | date: "%Y" }}. Hong Kong Institute of Educational Research. All Rights Reserved. The Chinese University of Hong Kong</p>
+            <p>Copyright © {{ "now" | date: "%Y" }}. {{site.title}} - Hong Kong Institute of Educational Research. All Rights Reserved. The Chinese University of Hong Kong</p>
           </section>
           <section id="subfooter-right" class="small-12 medium-6 columns">
             {% include _contact.html short=true %}

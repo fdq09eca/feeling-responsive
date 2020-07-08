@@ -10,15 +10,13 @@ header:
 widget1:
   title: "About us"
   url: '/about/'
-  image: widget-1-302x182.jpg
-  text: |
-    Our background information and people.
+  image: about-thumbnail.jpg
+  text: Our background information and people.
 widget2:
   title: "Our Research"
   url: 'http://phlow.github.io/feeling-responsive/info/'
   image: research-thumbnail.jpg
-  text: |
-    Our Research themes, progress and results.
+  text: Our Research themes, progress and results.
   # video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "News"
@@ -53,3 +51,31 @@ homepage: true
   </div>
   <a class="close-reveal-modal">&#215;</a>
 </div> -->
+# {{site.title}}
+<div class="row">
+    <div class="medium-4 columns t30">
+    <img src="{{ site.urlimg }}gallery-example-4.jpg" alt="">
+    </div><!-- /.medium-4.columns -->
+
+    <div class="medium-4 columns t30">
+      <img src="{{ site.urlimg }}gallery-example-5.jpg" alt="">
+    </div><!-- /.medium-4.columns -->
+
+    <div class="medium-4 columns t30">
+      <img src="{{ site.urlimg }}gallery-example-6.jpg" alt="">
+    </div><!-- /.medium-4.columns -->
+
+</div><!-- /.row -->
+
+
+<div class="row">
+    <div class="medium-8 columns t30">
+    <img src="{{ site.urlimg }}gallery-example-7.jpg" alt="">
+    </div><!-- /.medium-8.columns -->
+
+    <div class="medium-4 columns t30">
+      <img src="{{ site.urlimg }}gallery-example-3.jpg" alt="">
+      <img class="t30" src="{{ site.urlimg }}gallery-example-8.jpg" alt="">
+    </div><!-- /.medium-4.columns -->
+
+</div><!-- /.row -->

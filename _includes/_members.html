@@ -18,13 +18,14 @@
       <ul class="no-bullet">
         <li class="member-title">{{member.title}} {{name.first}} {{name.last}}</li>
         <li class="member-position">{{member.position}}</li>
-        <!-- <ul class="no-bullet"> -->
-          <li><strong>Reseach interests</strong></li>
-          <li class="member-abstract">{{member.research_interests | markdownify }}</li>
-        <!-- </ul> -->
+        <li><strong>Reseach interests</strong></li>
+          {% assign research_interests = member.research_interests | sort %}
+          {% for research_interest in research_interests %}
+          <li class="member-abstract">{{research_interest}}</li>
+          {% endfor %}
       </ul>
       <a class="button tiny" href="{{member.personal_website}}">Read more</a>
-      <a class="button tiny" href="mailto:{{member.email}}">Contact</a>
+      <a class="button tiny info" href="mailto:{{member.email}}">Contact</a>
       </div>
       
 

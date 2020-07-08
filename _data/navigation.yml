@@ -8,7 +8,12 @@
   dropdown:
   - title: "Our members"
     url: "/about/#our-members"
-
+- title: Reseach
+  url: "/research/"
+  side: left
+  dropdown:
+  - title: "literature review"
+    url: "/research/#lit-review"
 - title: "Templates"
   url: "/design/"
   side: left
